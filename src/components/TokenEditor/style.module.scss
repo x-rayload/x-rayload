@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  min-height: 100px;
+  max-height: 100px;
+  flex-direction: column;
+  padding: 12px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+
+  &:focus-within {
+    border-color: var(--theme-color-emphasize);
+  }
+}
+.textarea {
+  flex: 1;
+  background-color: transparent;
+  resize: none;
+  color: white;
+  outline: none;
+  border: none;
+}
+.placeholderMask {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: var(--theme-color-deem-gray);
+  pointer-events: none;
+  font-size: 20px;
+  font-weight: bold;
+  animation: blink 0.7s infinite alternate;
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

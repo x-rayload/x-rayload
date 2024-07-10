@@ -1,0 +1,13 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.viewWrapper {
+  min-width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex: 1;
+}

@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.viewWrapper {
+  flex: 1;
+  display: flex;
+}

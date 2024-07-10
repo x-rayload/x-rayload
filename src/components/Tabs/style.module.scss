@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  gap: 1px;
+}
+
+.tab {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--theme-color-deem-gray);
+  border: none;
+  border-bottom: 2px solid var(--theme-color-deem-gray);
+  color: var(--theme-color-dark-gray);
+  fill: var(--theme-color-dark-gray);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeTab {
+  @extend .tab;
+  border-color: var(--theme-color-emphasize);
+  color: var(--theme-color-emphasize);
+  fill: var(--theme-color-emphasize);
+}
